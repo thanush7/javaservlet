@@ -1,0 +1,25 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>XHR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getItems()">
+   <div class="container">
+    <form action="javascript:void(0);" method="POST">
+        <input type="text" id="customername" placeholder="customer name">
+        <button type="submit" id="myBtn" onclick="saveORupdateItem()">Save</button>
+    </form>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="customers"></tbody>
+    </table>
+   </div>
+    <script src="index.js" asp-append-version="true"></script>
+</body>
+</html>
